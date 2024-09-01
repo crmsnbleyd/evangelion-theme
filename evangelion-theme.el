@@ -25,41 +25,41 @@
 
 (let*
     ((class '((class color) (min-colors 256)))
-     (evangelion-bg       "#201430")
-     (evangelion-fg       "#E1D6F8")
-     (evangelion-green    "#87FF5F")
-     (evangelion-green2   "#9CDA7C")
-     (evangelion-hl       "#39274D")
-     (evangelion-fade     "#A1A0AD")
-     (evangelion-lavender "#AB92FC")
-     (evangelion-purple   "#B968FC")
-     (evangelion-orange   "#E6BB85")
-     (evangelion-orange2  "#D99145"))
+     (bg       "#201430")
+     (fg       "#E1D6F8")
+     (green    "#87FF5F")
+     (green2   "#9CDA7C")
+     (hl       "#39274D")
+     (fade     "#A1A0AD")
+     (lavender "#AB92FC")
+     (purple   "#B968FC")
+     (orange   "#E6BB85")
+     (orange2  "#D99145"))
 
      
      (custom-theme-set-faces
       'evangelion
-      `(default ((t (:background ,evangelion-bg :foreground ,evangelion-fg))))
+      `(default ((,class (:background ,bg :foreground ,fg))))
      ;;; font lock default faces
-      `(font-lock-builtin-face ((t (:foreground ,evangelion-green2))))
+      `(font-lock-builtin-face ((,class (:foreground ,green2))))
       `(font-lock-comment-face
-	((t (:foreground ,evangelion-fade :background ,evangelion-hl))))
-      `(font-lock-constant-face ((t (:foreground ,evangelion-orange2))))
-      `(font-lock-doc-string-face ((t (:foreground ,evangelion-lavender))))
-      `(font-lock-function-name-face ((t (:foreground ,evangelion-green2))))
-      `(font-lock-keyword-face ((t (:bold t :foreground ,evangelion-green))))
-      `(font-lock-preprocessor-face ((t (:foreground ,evangelion-green))))
-      `(font-lock-reference-face ((t (:foreground ,evangelion-purple))))
-      `(font-lock-string-face ((t (:foreground ,evangelion-lavender))))
-      `(font-lock-type-face ((t (:foreground ,evangelion-green2))))
-      `(font-lock-variable-name-face ((t (:foreground ,evangelion-purple))))
-      `(font-lock-warning-face ((t (:bold t :foreground ,evangelion-orange))))
+	((,class (:foreground ,fade :background ,hl))))
+      `(font-lock-constant-face ((,class (:foreground ,orange2))))
+      `(font-lock-doc-string-face ((,class (:foreground ,lavender))))
+      `(font-lock-function-name-face ((,class (:foreground ,green2))))
+      `(font-lock-keyword-face ((,class (:bold t :foreground ,green))))
+      `(font-lock-preprocessor-face ((,class (:foreground ,green))))
+      `(font-lock-reference-face ((,class (:foreground ,purple))))
+      `(font-lock-string-face ((,class (:foreground ,lavender))))
+      `(font-lock-type-face ((,class (:foreground ,green2))))
+      `(font-lock-variable-name-face ((,class (:foreground ,purple))))
+      `(font-lock-warning-face ((,class (:bold t :foreground ,orange))))
      ;;; paren
       `(show-paren-match
-	((t (:foreground ,evangelion-purple :background ,evangelion-hl :bold t))))
+	((,class (:foreground ,purple :background ,hl :bold t))))
      ;;; line number
       `(line-number-current-line
-	((t (:inherit line-number :foreground ,evangelion-green))))))
+	((,class (:inherit line-number :foreground ,green))))))
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
