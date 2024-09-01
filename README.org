@@ -1,0 +1,4 @@
+** evangelion-theme
+a colorscheme for ~emacs~ inspired  by neon genesis evangelion.
+
+Heavily based on the theme [[https://github.com/xero/evangelion.nvim][evangelion.nvim]] by xero harrison.
