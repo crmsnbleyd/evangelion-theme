@@ -33,10 +33,10 @@
      (fade     "#A1A0AD")
      (lavender "#AB92FC")
      (purple   "#B968FC")
+     (red      "#5B2B41")
      (orange   "#E6BB85")
      (orange2  "#D99145"))
 
-     
      (custom-theme-set-faces
       'evangelion
       `(default ((,class (:background ,bg :foreground ,fg))))
@@ -59,7 +59,30 @@
 	((,class (:foreground ,purple :background ,hl :bold t))))
      ;;; line number
       `(line-number-current-line
-	((,class (:inherit line-number :foreground ,green))))))
+	((,class (:inherit line-number :foreground ,green))))
+     ;;; magit
+      `(magit-branch-local
+       ((t (:foreground ,orange))))
+     `(magit-branch-remote
+       ((t (:foreground ,lavender))))
+     `(git-commit-summary
+       ((t (:foreground ,green))))
+     `(git-commit-overlong-summary
+       ((t (:foreground ,red :weight semi-bold))))
+     `(magit-dimmed
+       ((t (:foreground ,fade))))
+     `(magit-blame-dimmed
+       ((t (:foreground ,fade))))
+     `(magit-header-line
+       ((t (:foreground ,fg
+	    :background ,hl))))
+     `(magit-header-line-log-select
+       ((t (:foreground ,fg
+	    :background ,hl))))
+     `(magit-section-heading
+       ((t (:foreground ,fade :height 1.2))))
+     `(magit-section-highlight
+       ((t (:background ,hl :extend t))))))
 
 (and load-file-name
      (boundp 'custom-theme-load-path)
