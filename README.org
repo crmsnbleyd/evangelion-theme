@@ -1,4 +1,6 @@
 ** evangelion-theme
+[[https://melpa.org/#/evangelion-theme][file:https://melpa.org/packages/evangelion-theme-badge.svg]] [[https://github.com/crmsnbleyd/flexoki-emacs-theme/blob/trunk/LICENSE][file:https://img.shields.io/badge/license-GPL_3-green.svg]]
+
 a colorscheme for ~emacs~ inspired  by neon genesis evangelion.
 
 Heavily based on the theme [[https://github.com/xero/evangelion.nvim][evangelion.nvim]] by xero harrison.
