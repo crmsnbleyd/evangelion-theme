@@ -88,6 +88,14 @@
        ((t (:foreground ,fade :height 1.2))))
      `(magit-section-highlight
        ((t (:background ,hl :extend t))))
+     ;;; org mode
+     `(org-block
+       ((t (:background ,hl))))
+     `(org-block-begin-line
+       ((t (:foreground ,fade :background ,bg :extend nil))))
+     `(org-code ((t (:foreground ,orange2))))
+     `(org-level-1 ((t (:foreground ,green))))
+     `(org-level-3 ((t (:foreground ,green2))))
      ;;; paren
       `(show-paren-match
 	((,class (:foreground ,purple :background ,hl :bold t))))
