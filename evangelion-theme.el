@@ -46,6 +46,7 @@
       `(highlight ((,class (:background ,hl))))
       `(link ((,class (:foreground ,green2 :underline t))))
       `(region ((,class (:background ,teal))))
+      `(error ((,class (:foreground "red"))))
      ;;; font lock default faces
       `(font-lock-builtin-face ((,class (:foreground ,green2))))
       `(font-lock-comment-face
