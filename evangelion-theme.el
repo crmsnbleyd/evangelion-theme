@@ -29,7 +29,7 @@
      (fg       "#E1D6F8")
      (green    "#87FF5F")
      (green2   "#9CDA7C")
-     (teal     "#397B6E")
+     (teal     "#20453E")
      (black    "#222222")
      (hl       "#39274D")
      (fade     "#A1A0AD")
