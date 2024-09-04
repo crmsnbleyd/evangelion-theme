@@ -30,7 +30,7 @@
      (green    "#87FF5F")
      (green2   "#9CDA7C")
      (teal     "#397B6E")
-     ;; (black    "#222222")
+     (black    "#222222")
      (hl       "#39274D")
      (fade     "#A1A0AD")
      (lavender "#AB92FC")
@@ -88,6 +88,11 @@
        ((t (:foreground ,fade :height 1.2))))
      `(magit-section-highlight
        ((t (:background ,hl :extend t))))
+     ;;; mode-line
+     `(mode-line-active
+       ((t (:background ,teal :foreground ,fg))))
+     `(mode-line-inactive
+       ((t (:background ,black))))
      ;;; org mode
      `(org-block
        ((t (:background ,hl))))
