@@ -6,11 +6,14 @@ a colorscheme for ~emacs~ inspired  by neon genesis evangelion.
 Heavily based on the theme [[https://github.com/xero/evangelion.nvim][evangelion.nvim]] by xero harrison.
 *** Installation
 If the package is in your load-path, you can use the following use-package form to set ~evangelion~ as your theme.
+
 #+begin_src emacs-lisp
   (use-package evangelion-theme
+    :custom
+    ;; `nil' to disable background for comments
+    (evangelion-comment-background-enabled . t)
     :config (load-theme 'evangelion t))
 #+end_src
 *** Screenshots
 #+caption: Org mode with code block
 [[https://github.com/crmsnbleyd/evangelion-theme/blob/main/screenshots/org-babel.png]]
-
