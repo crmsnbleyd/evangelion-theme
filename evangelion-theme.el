@@ -23,6 +23,11 @@
   :kind 'color-scheme
   :background-mode 'dark)
 
+(defcustom evangelion--comment-background-enabled t
+  "Whether to display a background behind comment lines and blocks"
+  :type 'boolean
+  :group 'evangelion)
+
 (let*
     ((class '((class color) (min-colors 256)))
      (bg       "#201430")
@@ -50,7 +55,7 @@
      ;;; font lock default faces
       `(font-lock-builtin-face ((,class (:foreground ,green2))))
       `(font-lock-comment-face
-	((,class (:foreground ,fade :background ,hl))))
+	((,class (:foreground ,fade :background ,(if evangelion--comment-background-enabled hl nil)))))
       `(font-lock-constant-face ((,class (:foreground ,orange2))))
       `(font-lock-doc-string-face ((,class (:foreground ,lavender))))
       `(font-lock-function-name-face ((,class (:foreground ,green2))))
