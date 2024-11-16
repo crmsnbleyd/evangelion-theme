@@ -146,6 +146,5 @@
                    (file-name-directory load-file-name))))
 
 (provide-theme 'evangelion)
-(provide 'evangelion)
 
 ;;; evangelion-theme.el ends here
